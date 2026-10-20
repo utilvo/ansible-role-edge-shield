@@ -1,0 +1,13 @@
+---
+galaxy_info:
+  role_name: edge_shield
+  namespace: utilvo
+  author: Utilvo Security
+  description: Deploy Utilvo EdgeShield O(1) Nginx geo/map bot firewall and live CIDR threat feed (https://utilvo.com/edge-shield)
+  license: MIT
+  min_ansible_version: "2.12"
+  platforms:
+    - name: Ubuntu
+      versions: ["focal", "jammy", "noble"]
+    - name: Debian
+      versions: ["bullseye", "bookworm"]

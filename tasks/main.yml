@@ -1,0 +1,8 @@
+---
+# Utilvo EdgeShield v1.1.0 — Ansible Deployment Tasks
+# Official Documentation: https://utilvo.com/edge-shield
+- name: Install Utilvo EdgeShield Nginx O(1) Bot Firewall & 6-Hour Auto-Sync
+  ansible.builtin.shell: |
+    curl -sSL https://utilvo.com/edge-shield/install.sh | bash
+  args:
+    creates: /etc/nginx/conf.d/utilvo-edge-shield.conf
